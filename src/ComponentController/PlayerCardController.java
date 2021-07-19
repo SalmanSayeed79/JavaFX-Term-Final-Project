@@ -1,6 +1,6 @@
 package ComponentController;
 
-import Controller.ClubDetailsController;
+
 import Main.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -36,13 +36,57 @@ public class PlayerCardController {
         this.main=main;
     }
     public void setPlayerImage(String playerName){
-        playerImage.setImage(new Image("Images/Players/Allison.png") );
+        try{
+            String url="/Images/Players/"+playerName+".png";
+            //url="/Images/Players/Jordan Henderson.png";
+            Image image = new Image(String.valueOf(getClass().getResource(url)));
+            this.playerImage.setImage(image);
+        }catch (Exception e){
+            System.out.println("No image found");
+        }
+
+
     }
 
-    public void setPlayerAge(String playerAge) {
-        this.playerAge.setText(playerAge);
+    public void setPlayerAge(int playerAge) {
+        String age=Integer.toString(playerAge);
+        this.playerAge.setText(age);
     }
     public void setPlayerName(String playerName) {
         this.playerName.setText(playerName);
     }
+
+    public void setPlayerFlag(String country) {
+        try{
+            String url="/Images/Flags/"+country+".png";
+            //url="/Images/Flags/Spain.png";
+            System.out.println(url);
+            Image image = new Image(String.valueOf(getClass().getResource(url)));
+            this.playerFlag.setImage(image);
+        }catch (Exception e){
+            System.out.println("No image found");
+        }
+
+    }
+
+    public void setPlayerHeight(Double playerHeight) {
+        String height=Double.toString(playerHeight);
+        this.playerHeight.setText(height);
+    }
+
+    public void setPlayerNumber(int playerNumber) {
+        String number=Integer.toString(playerNumber);
+        this.playerNumber.setText(number);
+    }
+
+    public void setPlayerPosition(String playerPosition) {
+        this.playerPosition.setText(playerPosition);
+    }
+
+    public void setPlayerSalary(Double playerSalary) {
+        String salary=Double.toString(playerSalary);
+        this.playerSalary.setText(salary);
+    }
+
+
 }

@@ -14,9 +14,7 @@
             <VBox prefHeight="100.0" prefWidth="200.0">
                <children>
                   <ImageView fx:id="playerImage" fitHeight="100.0" fitWidth="200.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/Players/Hector%20Bellerin.png" />
-                     </image>
+
                   </ImageView>
                </children>
             </VBox>
@@ -46,9 +44,7 @@
             <VBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
                <children>
                   <ImageView fx:id="playerFlag" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/Flags/Ghana.png" />
-                     </image>
+
                   </ImageView>
                </children>
             </VBox>

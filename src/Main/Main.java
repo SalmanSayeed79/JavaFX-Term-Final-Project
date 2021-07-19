@@ -14,7 +14,7 @@ import Controller.PlayerDetailController;
 import Controller.HomeController;
 import Controller.ClubDetailsController;
 import Controller.ClubController;
-
+import Model.Model;
 
 import java.io.IOException;
 
@@ -33,7 +33,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-
+        Model.main();
         loginStage=primaryStage;
         mainStage=new Stage();
         clubDetail=new Stage();
@@ -49,10 +49,10 @@ public class Main extends Application {
 
     public void showLoginStage() throws IOException {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/Scenes/login.fxml"));
+        loader.setLocation(getClass().getResource("/Scenes/Club.fxml"));
         Parent root = loader.load();
-
-        LoginController controller = loader.getController();
+        ClubController controller=loader.getController();
+        //LoginController controller = loader.getController();
         controller.setMain(this);
 
         loginStage.setTitle("Hello World");
@@ -116,7 +116,7 @@ public class Main extends Application {
         controller.setMain(this);
 
         clubDetail.setScene(new Scene(root,1280,720));
-        clubDetail.initStyle(StageStyle.UNDECORATED);
+        clubDetail.initStyle(StageStyle.DECORATED);
         clubDetail.show();
 
     }

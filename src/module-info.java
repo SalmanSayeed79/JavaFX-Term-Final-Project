@@ -4,4 +4,5 @@ module PartTwo {
 
     opens Main;
     opens Controller;
+    opens ComponentController;
 }
