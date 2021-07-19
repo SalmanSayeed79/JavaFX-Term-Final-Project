@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox fx:controller="sample.PlayerDetailController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="720.0" prefWidth="640.0">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Players/With%20bg/Cesar%20Azpilicueta.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="640.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="640.0" />
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="640.0">
+               <children>
+                  <VBox prefHeight="150.0" prefWidth="40.0" />
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="600.0">
+                     <children>
+                        <Label prefHeight="111.0" prefWidth="197.0" text="25">
+                           <font>
+                              <Font name="Oswald SemiBold" size="70.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" text="Caeser Azpeliqueta">
+                           <font>
+                              <Font name="Oswald SemiBold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="89.0" text="Defender">
+                           <font>
+                              <Font name="Oswald Regular" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="40.0" prefHeight="50.0" prefWidth="640.0" />
+            <HBox prefHeight="200.0" prefWidth="640.0">
+               <children>
+                  <VBox prefHeight="150.0" prefWidth="40.0" />
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="600.0" spacing="20.0">
+                     <children>
+                        <Label layoutX="10.0" layoutY="10.0" text="Height : 1.85m">
+                           <font>
+                              <Font name="Oswald Regular" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" text="Age      : 30yrs">
+                           <font>
+                              <Font name="Oswald Regular" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="57.0" text="Salary : $175000">
+                           <font>
+                              <Font name="Oswald Regular" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="200.0" prefWidth="640.0">
+               <children>
+                  <VBox prefHeight="150.0" prefWidth="40.0" />
+                  <VBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="280.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" text="Spain">
+                           <font>
+                              <Font name="Oswald Regular" size="25.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Flags/Spain.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="280.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" text="Chelsea">
+                           <font>
+                              <Font name="Oswald Regular" size="25.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Chelsea.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="150.0" prefWidth="40.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
