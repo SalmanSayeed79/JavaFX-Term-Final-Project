@@ -50,7 +50,7 @@ public class PlayerCardController {
 
     public void setPlayerAge(int playerAge) {
         String age=Integer.toString(playerAge);
-        this.playerAge.setText(age);
+        this.playerAge.setText(age+"yrs");
     }
     public void setPlayerName(String playerName) {
         this.playerName.setText(playerName);
@@ -71,7 +71,7 @@ public class PlayerCardController {
 
     public void setPlayerHeight(Double playerHeight) {
         String height=Double.toString(playerHeight);
-        this.playerHeight.setText(height);
+        this.playerHeight.setText(height+"m");
     }
 
     public void setPlayerNumber(int playerNumber) {
@@ -85,7 +85,7 @@ public class PlayerCardController {
 
     public void setPlayerSalary(Double playerSalary) {
         String salary=Double.toString(playerSalary);
-        this.playerSalary.setText(salary);
+        this.playerSalary.setText("$ "+salary);
     }
 
 

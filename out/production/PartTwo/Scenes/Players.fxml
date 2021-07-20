@@ -51,7 +51,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="220.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Clubs" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="220.0" mnemonicParsing="false" onAction="#clubButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Clubs" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -66,7 +66,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="265.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Players" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="265.0" mnemonicParsing="false" onAction="#playersButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Players" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -95,7 +95,7 @@
                         </Blend>
                      </effect>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="310.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Transfer" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="310.0" mnemonicParsing="false" onAction="#transferButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Transfer" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -110,7 +110,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="355.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Play Game" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="355.0" mnemonicParsing="false" onAction="#playButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Play Game" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -125,7 +125,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="400.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Settings" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="400.0" mnemonicParsing="false" onAction="#settingsButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Settings" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>

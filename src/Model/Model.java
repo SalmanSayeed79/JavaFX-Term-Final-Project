@@ -35,7 +35,7 @@ public class Model {
                     if(players.get(j).getPosition().equalsIgnoreCase("Midfielder")){
                         clubs.get(i).addMidfielders();
                     }
-                    if(players.get(j).getPosition().equalsIgnoreCase("Attacker")){
+                    if(players.get(j).getPosition().equalsIgnoreCase("Forward")){
                         clubs.get(i).addAttackers();
                     }
 

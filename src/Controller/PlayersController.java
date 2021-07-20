@@ -64,6 +64,7 @@ public class PlayersController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         ArrayList<Player> players=Model.players;
         for(int i=0;i<players.size();i++){
             Player currentPlayer=players.get(i);
