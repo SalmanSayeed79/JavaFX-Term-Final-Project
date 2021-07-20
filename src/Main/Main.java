@@ -1,5 +1,6 @@
 package Main;
 
+import ComponentController.PlayerDetailController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,12 +12,12 @@ import javafx.stage.StageStyle;
 //Importing controllers
 import Controller.LoginController;
 import Controller.PlayersController;
-import Controller.PlayerDetailController;
 import Controller.HomeController;
 import Controller.ClubDetailsController;
 import Controller.ClubController;
 import Model.Model;
 import Model.Club;
+import Model.Player;
 
 import java.io.IOException;
 
@@ -25,7 +26,7 @@ public class Main extends Application {
     private Stage mainStage;
     private Stage loginStage;
     private static Stage clubDetail;
-    private Stage playerDetail;
+    private static Stage playerDetail;
 
     public Stage getStage() {
         return mainStage;
@@ -128,14 +129,25 @@ public class Main extends Application {
     public static void closeClubDetail(){
         clubDetail.close();
     }
-    public void showPlayerDetailScene() throws IOException {
+    public static void showPlayerDetailScene(Player player) throws IOException {
         playerDetail=new Stage();
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/Scenes/PlayerDetail.fxml"));
+        loader.setLocation(Main.class.getResource("/Components/PlayerDetail.fxml"));
         Parent root = loader.load();
 
         PlayerDetailController controller = loader.getController();
-        controller.setMain(this);
+        controller.setPlayerName(player.getName());
+        controller.setPlayerAge(player.getAge());
+        controller.setPlayerNumber(player.getNumber());
+        controller.setPlayerPosition(player.getPosition());
+        controller.setPlayerCountry(player.getCountry());
+        controller.setPlayerHeight(player.getHeight());
+        controller.setPlayerAge(player.getAge());
+        controller.setPlayerSalary(player.getSalary());
+        controller.setPlayerFlag(player.getCountry());
+        controller.setPlayerClub(player.getClub());
+        controller.setPlayerClubName(player.getClub());
+        controller.setPlayerImage(player.getName());
 
         playerDetail.setScene(new Scene(root,1280,720));
         playerDetail.initStyle(StageStyle.DECORATED);

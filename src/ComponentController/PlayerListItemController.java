@@ -1,11 +1,16 @@
 package ComponentController;
 
+import Main.Main;
+import Model.Player;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.io.IOException;
+
 public class PlayerListItemController {
+    private Player player;
     @FXML
     private ImageView playerImage;
 
@@ -23,6 +28,8 @@ public class PlayerListItemController {
 
     @FXML
     private ImageView playerClub;
+
+    public void setPlayer(Player player){this.player=player;}
 
     public void setPlayerImage(String playerName){
         try{
@@ -72,5 +79,9 @@ public class PlayerListItemController {
         this.playerPosition.setText(playerPosition);
     }
 
+
+    public void handlePlayerClick() throws IOException {
+        Main.showPlayerDetailScene(this.player);
+    }
 
 }

@@ -58,9 +58,7 @@ public class PlayersController implements Initializable {
     }
 
 
-    public void playerClicked(MouseEvent mouseEvent) throws IOException {
-        main.showPlayerDetailScene();
-    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -73,7 +71,9 @@ public class PlayersController implements Initializable {
                 fxmlLoader.setLocation(getClass().getResource("/Components/PlayerListItem.fxml"));
                 HBox listItem=fxmlLoader.load();
 
+
                 PlayerListItemController playerListItemController=fxmlLoader.getController();
+                playerListItemController.setPlayer(currentPlayer);
                 playerListItemController.setPlayerName(currentPlayer.getName());
                 playerListItemController.setPlayerImage(currentPlayer.getName());
                 playerListItemController.setPlayerPosition(currentPlayer.getPosition());
