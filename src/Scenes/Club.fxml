@@ -13,13 +13,12 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.FlowPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:controller="Controller.ClubController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:controller="Controller.ClubController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <FlowPane prefHeight="1080.0" prefWidth="400.0" style="-fx-background-color: #f2f2f2; -fx-border-color: gray; -fx-border-width: 1px; -fx-border-style: solid;" BorderPane.alignment="CENTER">
          <children>
@@ -53,7 +52,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="220.0" mnemonicParsing="false" onAction="#clubButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Clubs" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="220.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Clubs" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -82,7 +81,7 @@
                         </Blend>
                      </effect>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="265.0" mnemonicParsing="false" onAction="#playersButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Players" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="265.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Players" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -97,7 +96,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="310.0" mnemonicParsing="false" onAction="#transferButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Transfer" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="310.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Transfer" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -112,7 +111,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="355.0" mnemonicParsing="false" onAction="#playButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Play Game" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="355.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Play Game" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -127,7 +126,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="400.0" mnemonicParsing="false" onAction="#settingsButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Settings" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="400.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Settings" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -167,153 +166,11 @@
                         <Image url="@../Images/ClubBg.png" />
                      </image>
                   </ImageView>
-                  <VBox  alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                  <FlowPane fx:id="clubCardContainer" alignment="CENTER" hgap="100.0" maxHeight="1080.0" maxWidth="1520.0" prefHeight="1080.0" prefWidth="1520.0" vgap="100.0">
                      <children>
-                        <HBox alignment="CENTER" prefHeight="450.0" prefWidth="1520.0" spacing="50.0">
-                           <children>
-                              <StackPane onMouseClicked="#clubClicked" alignment="TOP_CENTER" cacheShape="false" centerShape="false" layoutX="570.0" layoutY="110.0" maxHeight="300.0" maxWidth="400.0" prefHeight="250.0" prefWidth="400.0" scaleShape="false" style="-fx-border-color: gray; -fx-border-style: solid; -fx-border-width: .5; -fx-background-color: #f2f2f2;">
-                                 <children>
-                                    <ImageView fitHeight="136.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../Images/Arsenal.png" />
-                                       </image>
-                                       <StackPane.margin>
-                                          <Insets top="50.0" />
-                                       </StackPane.margin>
-                                    </ImageView>
-                                    <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" graphicTextGap="100.0" prefHeight="306.0" prefWidth="385.0" style="-fx-background-color: f4f4f402; -fx-padding: 10;" text="Arsenal">
-                                       <font>
-                                          <Font name="Oswald Medium" size="50.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                                 <effect>
-                                    <DropShadow offsetX="5.0" offsetY="5.0">
-                                       <color>
-                                          <Color red="0.32894736528396606" green="0.32894736528396606" blue="0.32894736528396606" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                              </StackPane>
-                              <StackPane onMouseClicked="#clubClicked" alignment="TOP_CENTER" cacheShape="false" centerShape="false" layoutX="570.0" layoutY="110.0" maxHeight="300.0" maxWidth="400.0" prefHeight="250.0" prefWidth="400.0" scaleShape="false" style="-fx-border-color: gray; -fx-border-style: solid; -fx-border-width: .5; -fx-background-color: #f2f2f2;">
-                                 <children>
-                                    <ImageView fitHeight="136.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../Images/Chelsea.png" />
-                                       </image>
-                                       <StackPane.margin>
-                                          <Insets top="50.0" />
-                                       </StackPane.margin>
-                                    </ImageView>
-                                    <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" graphicTextGap="100.0" prefHeight="306.0" prefWidth="385.0" style="-fx-background-color: f4f4f402; -fx-padding: 10;" text="Chelsea">
-                                       <font>
-                                          <Font name="Oswald Medium" size="50.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                                 <effect>
-                                    <DropShadow offsetX="5.0" offsetY="5.0">
-                                       <color>
-                                          <Color red="0.32894736528396606" green="0.32894736528396606" blue="0.32894736528396606" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                              </StackPane>
-                              <StackPane onMouseClicked="#clubClicked" alignment="TOP_CENTER" cacheShape="false" centerShape="false" layoutX="345.0" layoutY="110.0" maxHeight="300.0" maxWidth="400.0" prefHeight="250.0" prefWidth="400.0" scaleShape="false" style="-fx-border-color: gray; -fx-border-style: solid; -fx-border-width: .5; -fx-background-color: #f2f2f2;">
-                                 <children>
-                                    <ImageView fitHeight="136.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../Images/Liverpool.png" />
-                                       </image>
-                                       <StackPane.margin>
-                                          <Insets top="50.0" />
-                                       </StackPane.margin>
-                                    </ImageView>
-                                    <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" graphicTextGap="100.0" prefHeight="306.0" prefWidth="385.0" style="-fx-background-color: f4f4f402; -fx-padding: 10;" text="Liverpool">
-                                       <font>
-                                          <Font name="Oswald Medium" size="50.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                                 <effect>
-                                    <DropShadow offsetX="5.0" offsetY="5.0">
-                                       <color>
-                                          <Color red="0.32894736528396606" green="0.32894736528396606" blue="0.32894736528396606" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                              </StackPane>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER" prefHeight="450.0" prefWidth="1520.0" spacing="50.0">
-                           <children>
-                              <StackPane onMouseClicked="#clubClicked" alignment="TOP_CENTER" cacheShape="false" centerShape="false" layoutX="570.0" layoutY="110.0" maxHeight="300.0" maxWidth="400.0" prefHeight="250.0" prefWidth="400.0" scaleShape="false" style="-fx-border-color: gray; -fx-border-style: solid; -fx-border-width: .5; -fx-background-color: #f2f2f2;">
-                                 <children>
-                                    <ImageView fitHeight="136.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../Images/Manchester%20City.png" />
-                                       </image>
-                                       <StackPane.margin>
-                                          <Insets top="50.0" />
-                                       </StackPane.margin>
-                                    </ImageView>
-                                    <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" graphicTextGap="100.0" prefHeight="306.0" prefWidth="385.0" style="-fx-background-color: f4f4f402; -fx-padding: 10;" text="Manchester City">
-                                       <font>
-                                          <Font name="Oswald Medium" size="50.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                                 <effect>
-                                    <DropShadow offsetX="5.0" offsetY="5.0">
-                                       <color>
-                                          <Color red="0.32894736528396606" green="0.32894736528396606" blue="0.32894736528396606" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                              </StackPane>
-                              <StackPane onMouseClicked="#clubClicked" alignment="TOP_CENTER" cacheShape="false" centerShape="false" layoutX="795.0" layoutY="110.0" maxHeight="300.0" maxWidth="400.0" prefHeight="250.0" prefWidth="400.0" scaleShape="false" style="-fx-border-color: gray; -fx-border-style: solid; -fx-border-width: .5; -fx-background-color: #f2f2f2;">
-                                 <children>
-                                    <ImageView fitHeight="136.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../Images/Manchester%20United.png" />
-                                       </image>
-                                       <StackPane.margin>
-                                          <Insets top="50.0" />
-                                       </StackPane.margin>
-                                    </ImageView>
-                                    <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" graphicTextGap="100.0" prefHeight="306.0" prefWidth="385.0" style="-fx-background-color: f4f4f402; -fx-padding: 10;" text="Manchester United">
-                                       <font>
-                                          <Font name="Oswald Medium" size="50.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                                 <effect>
-                                    <DropShadow offsetX="5.0" offsetY="5.0">
-                                       <color>
-                                          <Color red="0.32894736528396606" green="0.32894736528396606" blue="0.32894736528396606" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                              </StackPane>
-                           </children>
-                        </HBox>
+
                      </children>
-                  </VBox>
+                  </FlowPane>
                </children>
             </StackPane>
          </center>

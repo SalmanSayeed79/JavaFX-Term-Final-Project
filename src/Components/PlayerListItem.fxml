@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:controller="ComponentController.PlayerListItemController" alignment="CENTER" cacheShape="false" centerShape="false" maxHeight="100.0" maxWidth="1180.0" prefHeight="100.0" prefWidth="1000.0" scaleShape="false" spacing="30.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets left="35.0" />
+   </padding>
+   <children>
+      <ImageView fx:id="playerImage" fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Players/Alisson.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="playerNumber" prefHeight="80.0" prefWidth="100.0" text="1">
+         <font>
+            <Font name="Oswald SemiBold" size="60.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER_LEFT" cacheShape="false" centerShape="false" prefHeight="95.0" prefWidth="550.0" scaleShape="false">
+         <children>
+            <Label fx:id="playerName" text="Allison">
+               <font>
+                  <Font name="Oswald SemiBold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="playerPosition" layoutX="10.0" layoutY="10.0" text="Goalkeeper">
+               <font>
+                  <Font name="Oswald Regular" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fx:id="playerFlag" fitHeight="80.0" fitWidth="120.0" layoutX="398.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+
+      </ImageView>
+      <ImageView fx:id="playerClub" fitHeight="80.0" fitWidth="120.0" layoutX="1133.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+
+      </ImageView>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</HBox>

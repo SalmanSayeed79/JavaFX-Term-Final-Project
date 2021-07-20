@@ -15,6 +15,7 @@ import Controller.HomeController;
 import Controller.ClubDetailsController;
 import Controller.ClubController;
 import Model.Model;
+import Model.Club;
 
 import java.io.IOException;
 
@@ -22,7 +23,7 @@ public class Main extends Application {
 
     private Stage mainStage;
     private Stage loginStage;
-    private Stage clubDetail;
+    private static Stage clubDetail;
     private Stage playerDetail;
 
     public Stage getStage() {
@@ -49,10 +50,10 @@ public class Main extends Application {
 
     public void showLoginStage() throws IOException {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/Scenes/Club.fxml"));
+        loader.setLocation(getClass().getResource("/Scenes/Login.fxml"));
         Parent root = loader.load();
-        ClubController controller=loader.getController();
-        //LoginController controller = loader.getController();
+        //ClubController controller=loader.getController();
+        LoginController controller = loader.getController();
         controller.setMain(this);
 
         loginStage.setTitle("Hello World");
@@ -106,21 +107,23 @@ public class Main extends Application {
 
     public void showSettingsScene() {
     }
-    public void showClubDetailScene() throws IOException {
+    public static void showClubDetailScene(Club club) throws IOException {
+        Club temp=club;
         clubDetail=new Stage();
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/Scenes/ClubDetails.fxml"));
+        loader.setLocation(Main.class.getResource("/Scenes/ClubDetails.fxml"));
         Parent root = loader.load();
 
         ClubDetailsController controller = loader.getController();
-        controller.setMain(this);
+        //controller.setMain(this);
+        controller.setClub(temp);
 
         clubDetail.setScene(new Scene(root,1280,720));
         clubDetail.initStyle(StageStyle.DECORATED);
         clubDetail.show();
 
     }
-    public void closeClubDetail(){
+    public static void closeClubDetail(){
         clubDetail.close();
     }
     public void showPlayerDetailScene() throws IOException {

@@ -6,16 +6,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.effect.Blend?>
-<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.FlowPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -53,7 +51,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="220.0" mnemonicParsing="false" onAction="#clubButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Clubs" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="220.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Clubs" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -68,7 +66,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="265.0" mnemonicParsing="false" onAction="#playersButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Players" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="265.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Players" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -97,7 +95,7 @@
                         </Blend>
                      </effect>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="310.0" mnemonicParsing="false" onAction="#transferButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Transfer" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="310.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Transfer" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -112,7 +110,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="355.0" mnemonicParsing="false" onAction="#playButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Play Game" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="355.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Play Game" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -127,7 +125,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="400.0" mnemonicParsing="false" onAction="#settingsButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Settings" textAlignment="RIGHT">
+                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="400.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Settings" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -160,14 +158,14 @@
    <center>
       <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <center>
-            <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
                   <ImageView fitHeight="1080.0" fitWidth="1520.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Images/PlayersBg.png" />
                      </image>
                   </ImageView>
-                  <VBox prefHeight="1080.0" prefWidth="1520.0">
+                  <VBox alignment="CENTER" prefHeight="1080.0" prefWidth="1520.0">
                      <children>
                         <VBox prefHeight="200.0" prefWidth="1520.0">
                            <children>
@@ -192,370 +190,15 @@
                               </Label>
                            </children>
                         </VBox>
-                        <ScrollPane cacheShape="false" centerShape="false" focusTraversable="false" prefHeight="670.0" prefWidth="1520.0" style="-fx-background-color: transperant;-fx-background:transperant">
+                        <ScrollPane cacheShape="false" centerShape="false" focusTraversable="false" maxWidth="1200.0" prefHeight="620.0" prefWidth="1200.0" style="-fx-background-color: transperant; -fx-background: transperant;">
                            <content>
-                              <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="1520.0" spacing="30.0">
-                                 <children>
-                                    <HBox onMouseClicked="#playerClicked" alignment="CENTER" cacheShape="false" centerShape="false" prefHeight="100.0" prefWidth="1450.0" scaleShape="false" spacing="30.0" style="-fx-background-color: white;">
-                                       <padding>
-                                          <Insets left="35.0" />
-                                       </padding>
-                                       <children>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Players/Alisson.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Label prefHeight="80.0" prefWidth="100.0" text="1">
-                                             <font>
-                                                <Font name="Oswald SemiBold" size="60.0" />
-                                             </font>
-                                          </Label>
-                                          <VBox alignment="CENTER_LEFT" cacheShape="false" centerShape="false" prefHeight="100.0" prefWidth="800.0" scaleShape="false">
-                                             <children>
-                                                <Label text="Allison">
-                                                   <font>
-                                                      <Font name="Oswald SemiBold" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label layoutX="10.0" layoutY="10.0" text="Goalkeeper">
-                                                   <font>
-                                                      <Font name="Oswald Regular" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="398.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Flags/Brazil.png" />
-                                             </image>
-                                          </ImageView>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="1133.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Liverpool.png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                    </HBox>
-                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="1450.0" scaleShape="false" spacing="30.0" style="-fx-background-color: white;">
-                                       <padding>
-                                          <Insets left="35.0" />
-                                       </padding>
-                                       <children>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Players/Bernd%20Leno.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Label prefHeight="80.0" prefWidth="100.0" text="1">
-                                             <font>
-                                                <Font name="Oswald SemiBold" size="60.0" />
-                                             </font>
-                                          </Label>
-                                          <VBox alignment="CENTER_LEFT" cacheShape="false" centerShape="false" prefHeight="100.0" prefWidth="800.0" scaleShape="false">
-                                             <children>
-                                                <Label text="Bernard Leno">
-                                                   <font>
-                                                      <Font name="Oswald SemiBold" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label layoutX="10.0" layoutY="10.0" text="Goalkeeper">
-                                                   <font>
-                                                      <Font name="Oswald Regular" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="398.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Flags/Germany.png" />
-                                             </image>
-                                          </ImageView>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="1133.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Arsenal.png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                    </HBox>
-                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" layoutX="10.0" layoutY="140.0" prefHeight="100.0" prefWidth="1450.0" scaleShape="false" spacing="30.0" style="-fx-background-color: white;">
-                                       <padding>
-                                          <Insets left="35.0" />
-                                       </padding>
-                                       <children>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Players/Bruno%20Fernandes.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Label prefHeight="80.0" prefWidth="100.0" text="26">
-                                             <font>
-                                                <Font name="Oswald SemiBold" size="60.0" />
-                                             </font>
-                                          </Label>
-                                          <VBox alignment="CENTER_LEFT" cacheShape="false" centerShape="false" prefHeight="100.0" prefWidth="800.0" scaleShape="false">
-                                             <children>
-                                                <Label text="Bruno Fernandes">
-                                                   <font>
-                                                      <Font name="Oswald SemiBold" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label layoutX="10.0" layoutY="10.0" text="Midfielder">
-                                                   <font>
-                                                      <Font name="Oswald Regular" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="398.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Flags/Portugal.png" />
-                                             </image>
-                                          </ImageView>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="1133.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Manchester%20United.png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                    </HBox>
-                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" layoutX="10.0" layoutY="270.0" prefHeight="100.0" prefWidth="1450.0" scaleShape="false" spacing="30.0" style="-fx-background-color: white;">
-                                       <padding>
-                                          <Insets left="35.0" />
-                                       </padding>
-                                       <children>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Players/Cesar%20Azpilicueta.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Label prefHeight="80.0" prefWidth="100.0" text="31">
-                                             <font>
-                                                <Font name="Oswald SemiBold" size="60.0" />
-                                             </font>
-                                          </Label>
-                                          <VBox alignment="CENTER_LEFT" cacheShape="false" centerShape="false" prefHeight="100.0" prefWidth="800.0" scaleShape="false">
-                                             <children>
-                                                <Label text="Cesar Azpilicueta">
-                                                   <font>
-                                                      <Font name="Oswald SemiBold" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label layoutX="10.0" layoutY="10.0" text="Defender">
-                                                   <font>
-                                                      <Font name="Oswald Regular" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="398.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Flags/Spain.png" />
-                                             </image>
-                                          </ImageView>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="1133.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Chelsea.png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                    </HBox>
-                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" layoutX="10.0" layoutY="400.0" prefHeight="100.0" prefWidth="1450.0" scaleShape="false" spacing="30.0" style="-fx-background-color: white;">
-                                       <padding>
-                                          <Insets left="35.0" />
-                                       </padding>
-                                       <children>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Players/David%20De%20Gia.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Label prefHeight="80.0" prefWidth="100.0" text="30">
-                                             <font>
-                                                <Font name="Oswald SemiBold" size="60.0" />
-                                             </font>
-                                          </Label>
-                                          <VBox alignment="CENTER_LEFT" cacheShape="false" centerShape="false" prefHeight="100.0" prefWidth="800.0" scaleShape="false">
-                                             <children>
-                                                <Label text="David De Gea">
-                                                   <font>
-                                                      <Font name="Oswald SemiBold" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label layoutX="10.0" layoutY="10.0" text="Goalkeeper">
-                                                   <font>
-                                                      <Font name="Oswald Regular" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="398.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Flags/Spain.png" />
-                                             </image>
-                                          </ImageView>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="1133.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Manchester%20United.png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                    </HBox>
-                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" layoutX="10.0" layoutY="514.0" prefHeight="100.0" prefWidth="1450.0" scaleShape="false" spacing="30.0" style="-fx-background-color: white;">
-                                       <padding>
-                                          <Insets left="35.0" />
-                                       </padding>
-                                       <children>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Players/Alisson.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Label prefHeight="80.0" prefWidth="100.0" text="1">
-                                             <font>
-                                                <Font name="Oswald SemiBold" size="60.0" />
-                                             </font>
-                                          </Label>
-                                          <VBox alignment="CENTER_LEFT" cacheShape="false" centerShape="false" prefHeight="100.0" prefWidth="800.0" scaleShape="false">
-                                             <children>
-                                                <Label text="Allison">
-                                                   <font>
-                                                      <Font name="Oswald SemiBold" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label layoutX="10.0" layoutY="10.0" text="Goalkeeper">
-                                                   <font>
-                                                      <Font name="Oswald Regular" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="398.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Flags/Brazil.png" />
-                                             </image>
-                                          </ImageView>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="1133.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Liverpool.png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                    </HBox>
-                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" layoutX="10.0" layoutY="635.0" prefHeight="100.0" prefWidth="1450.0" scaleShape="false" spacing="30.0" style="-fx-background-color: white;">
-                                       <padding>
-                                          <Insets left="35.0" />
-                                       </padding>
-                                       <children>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Players/Alisson.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Label prefHeight="80.0" prefWidth="100.0" text="1">
-                                             <font>
-                                                <Font name="Oswald SemiBold" size="60.0" />
-                                             </font>
-                                          </Label>
-                                          <VBox alignment="CENTER_LEFT" cacheShape="false" centerShape="false" prefHeight="100.0" prefWidth="800.0" scaleShape="false">
-                                             <children>
-                                                <Label text="Allison">
-                                                   <font>
-                                                      <Font name="Oswald SemiBold" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label layoutX="10.0" layoutY="10.0" text="Goalkeeper">
-                                                   <font>
-                                                      <Font name="Oswald Regular" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="398.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Flags/Brazil.png" />
-                                             </image>
-                                          </ImageView>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="1133.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Liverpool.png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                    </HBox>
-                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" layoutX="10.0" layoutY="760.0" prefHeight="100.0" prefWidth="1450.0" scaleShape="false" spacing="30.0" style="-fx-background-color: white;">
-                                       <padding>
-                                          <Insets left="35.0" />
-                                       </padding>
-                                       <children>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Players/Alisson.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Label prefHeight="80.0" prefWidth="100.0" text="1">
-                                             <font>
-                                                <Font name="Oswald SemiBold" size="60.0" />
-                                             </font>
-                                          </Label>
-                                          <VBox alignment="CENTER_LEFT" cacheShape="false" centerShape="false" prefHeight="100.0" prefWidth="800.0" scaleShape="false">
-                                             <children>
-                                                <Label text="Allison">
-                                                   <font>
-                                                      <Font name="Oswald SemiBold" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label layoutX="10.0" layoutY="10.0" text="Goalkeeper">
-                                                   <font>
-                                                      <Font name="Oswald Regular" size="25.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="398.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Flags/Brazil.png" />
-                                             </image>
-                                          </ImageView>
-                                          <ImageView fitHeight="80.0" fitWidth="120.0" layoutX="1133.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../Images/Liverpool.png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                    </HBox>
-                                 </children>
-                              </VBox>
+                              <VBox fx:id="playerList" prefHeight="600.0" prefWidth="1180.0" spacing="30.0" />
                            </content>
                         </ScrollPane>
                      </children>
                   </VBox>
                </children>
-            </StackPane>
+            </AnchorPane>
          </center>
       </BorderPane>
    </center>

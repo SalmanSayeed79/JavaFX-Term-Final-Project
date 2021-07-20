@@ -15,21 +15,21 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ClubDetailsController">
+<BorderPane fx:controller="Controller.ClubDetailsController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" >
    <left>
       <VBox prefHeight="720.0" prefWidth="400.0" style="-fx-background-color: #f2f2f2;" BorderPane.alignment="CENTER">
          <children>
             <HBox prefHeight="40.0" prefWidth="200.0" />
             <HBox alignment="CENTER" prefHeight="150.0" prefWidth="400.0">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/Manchester%20United.png" />
-                     </image>
+                  <ImageView fx:id="clubIcon" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+
+
+
                   </ImageView>
                </children>
             </HBox>
-            <Label alignment="CENTER" prefHeight="50.0" prefWidth="400.0" text="Manchester United" textAlignment="CENTER">
+            <Label fx:id="clubName" alignment="CENTER" prefHeight="50.0" prefWidth="400.0" textAlignment="CENTER">
                <font>
                   <Font name="Oswald Medium" size="40.0" />
                </font>
@@ -38,10 +38,10 @@
                <children>
                   <VBox prefHeight="100.0" prefWidth="100.0">
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../Images/Jersey/Manchester%20United.png" />
-                           </image>
+                        <ImageView fx:id="clubHome" fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+
+
+
                         </ImageView>
                         <Label alignment="CENTER" prefHeight="40.0" prefWidth="400.0" text="Home" textAlignment="CENTER">
                            <font>
@@ -52,10 +52,8 @@
                   </VBox>
                   <VBox layoutX="160.0" layoutY="10.0" prefHeight="100.0" prefWidth="100.0">
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../Images/Jersey/Manchester%20United_Away.png" />
-                           </image>
+                        <ImageView fx:id="clubAway" fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+
                         </ImageView>
                         <Label alignment="CENTER" prefHeight="40.0" prefWidth="400.0" text="Away" textAlignment="CENTER">
                            <font>
@@ -68,27 +66,27 @@
             </HBox>
             <VBox prefHeight="320.0" prefWidth="400.0">
                <children>
-                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="400.0" text="Goalkeepers : 1">
+                  <Label fx:id="clubGoalkeepers" alignment="CENTER" prefHeight="50.0" prefWidth="400.0" >
                      <font>
                         <Font name="Oswald Regular" size="25.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="400.0" text="Defenders    : 1">
+                  <Label fx:id="clubDefenders" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="400.0">
                      <font>
                         <Font name="Oswald Regular" size="25.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="50.0" prefWidth="400.0" text="Midfielders  : 1">
+                  <Label fx:id="clubMidfielders" alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="50.0" prefWidth="400.0">
                      <font>
                         <Font name="Oswald Regular" size="25.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="50.0" prefWidth="400.0" text="Attackers     : 1">
+                  <Label fx:id="clubAttackers" alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="50.0" prefWidth="400.0">
                      <font>
                         <Font name="Oswald Regular" size="25.0" />
                      </font>
                   </Label>
-                  <Label layoutX="10.0" layoutY="160.0" prefHeight="100.0" prefWidth="400.0" text="   TOTAL SALARY : $1,350,000">
+                  <Label fx:id="clubTotalSalary" layoutX="10.0" layoutY="160.0" prefHeight="100.0" prefWidth="400.0" >
                      <font>
                         <Font name="Oswald Medium" size="30.0" />
                      </font>

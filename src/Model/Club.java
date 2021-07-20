@@ -23,6 +23,7 @@ public class Club {
     public int getMidfielders(){return this.midfielders;}
     public int getAttackers(){return this.attackers;}
     public int getTotalPlayers(){return this.attackers+this.midfielders+this.defenders+this.goalkeepers;}
+    public Double getTotalSalary(){return this.totalSalary;}
     public ArrayList<Player> getClubPlayers(){return this.clubPlayers;}
 
     public void setName(String name){this.name=name;}
