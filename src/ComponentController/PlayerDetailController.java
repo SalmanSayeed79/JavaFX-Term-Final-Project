@@ -44,7 +44,7 @@ public class PlayerDetailController {
 
     public void setPlayerImage(String playerName){
         try{
-            String url="/Images/Players/WithBg/"+playerName+".jpg";
+            String url="/Images/Players/WithBg/"+playerName+".png";
             //url="/Images/Players/Jordan Henderson.png";
             Image image = new Image(String.valueOf(getClass().getResource(url)));
             this.playerImage.setImage(image);

@@ -59,7 +59,7 @@ public class Main extends Application {
         LoginController controller = loader.getController();
         controller.setMain(this);
 
-        loginStage.setTitle("Hello World");
+        loginStage.setTitle("Login window");
         loginStage.setScene(new Scene(root, 1280, 720));
         loginStage.show();
     }
@@ -72,6 +72,7 @@ public class Main extends Application {
         controller.setMain(this);
 
         mainStage.setScene(new Scene(root,1920,1080));
+        mainStage.setTitle("FUTBOL 2021");
         mainStage.show();
     }
     public void showClubScene() throws IOException {
@@ -122,7 +123,9 @@ public class Main extends Application {
         controller.setClub(temp);
 
         clubDetail.setScene(new Scene(root,1280,720));
-        clubDetail.initStyle(StageStyle.DECORATED);
+        clubDetail.setTitle(club.getName());
+        clubDetail.initStyle(StageStyle.UNDECORATED);
+        clubDetail.setResizable(false);
         clubDetail.show();
 
     }
@@ -150,7 +153,9 @@ public class Main extends Application {
         controller.setPlayerImage(player.getName());
 
         playerDetail.setScene(new Scene(root,1280,720));
+        playerDetail.setTitle(player.getName());
         playerDetail.initStyle(StageStyle.DECORATED);
+        playerDetail.setResizable(false);
         playerDetail.show();
     }
 }

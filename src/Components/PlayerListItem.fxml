@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.Cursor?>
 <HBox fx:controller="ComponentController.PlayerListItemController" onMouseClicked="#handlePlayerClick" alignment="CENTER" cacheShape="false" centerShape="false" maxHeight="100.0" maxWidth="1180.0" prefHeight="100.0" prefWidth="1000.0" scaleShape="false" spacing="30.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <padding>
       <Insets left="35.0" />
@@ -45,6 +46,9 @@
 
       </ImageView>
    </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
    <effect>
       <DropShadow />
    </effect>
