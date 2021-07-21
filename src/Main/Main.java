@@ -127,9 +127,7 @@ public class Main extends Application {
         clubDetail.show();
 
     }
-    public static void closeClubDetail(){
-        clubDetail.close();
-    }
+
     public static void showPlayerDetailScene(Player player) throws IOException {
         playerDetail=new Stage();
         FXMLLoader loader = new FXMLLoader();

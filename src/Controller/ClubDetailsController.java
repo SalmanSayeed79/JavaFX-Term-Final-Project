@@ -98,10 +98,6 @@ public class ClubDetailsController{
         }
 
     }
-
-    public void closeClubDetails(ActionEvent actionEvent) {
-         Main.closeClubDetail();
-    }
     public void setClubIcon(String clubName){
         try{
             String url="/Images/"+clubName+".png";

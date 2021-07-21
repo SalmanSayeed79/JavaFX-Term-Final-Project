@@ -15,17 +15,17 @@
       <Insets left="35.0" />
    </padding>
    <children>
+      <HBox minWidth="120" maxWidth="120" alignment="CENTER_LEFT">
       <ImageView fx:id="playerImage" fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Images/Players/Alisson.png" />
-         </image>
+
       </ImageView>
-      <Label fx:id="playerNumber" prefHeight="80.0" prefWidth="100.0" text="1">
+      </HBox>
+      <Label fx:id="playerNumber" prefHeight="80.0" prefWidth="100.0" minWidth="100" maxWidth="100" text="1">
          <font>
             <Font name="Oswald SemiBold" size="60.0" />
          </font>
       </Label>
-      <VBox alignment="CENTER_LEFT" cacheShape="false" centerShape="false" prefHeight="95.0" prefWidth="550.0" scaleShape="false">
+      <VBox alignment="CENTER_LEFT" cacheShape="false" centerShape="false" prefHeight="95.0" prefWidth="400.0" minWidth="400" maxWidth="400" scaleShape="false">
          <children>
             <Label fx:id="playerName" text="Allison">
                <font>
@@ -39,12 +39,16 @@
             </Label>
          </children>
       </VBox>
-      <ImageView fx:id="playerFlag" fitHeight="80.0" fitWidth="120.0" layoutX="398.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+      <HBox maxWidth="120" alignment="CENTER_LEFT">
+         <ImageView fx:id="playerFlag" fitHeight="80.0" fitWidth="120.0"  layoutX="398.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
 
-      </ImageView>
-      <ImageView fx:id="playerClub" fitHeight="80.0" fitWidth="120.0" layoutX="1133.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         </ImageView>
+      </HBox>
+      <HBox minWidth="180" maxWidth="180" alignment="CENTER_RIGHT">
+         <ImageView fx:id="playerClub" fitHeight="80.0" fitWidth="120.0" layoutX="1133.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
 
-      </ImageView>
+         </ImageView>
+      </HBox>
    </children>
    <cursor>
       <Cursor fx:constant="HAND" />
