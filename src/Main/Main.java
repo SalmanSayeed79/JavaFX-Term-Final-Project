@@ -42,11 +42,9 @@ public class Main extends Application {
         mainStage=new Stage();
         clubDetail=new Stage();
         playerDetail=new Stage();
-        showLoginStage();
-//        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-//        primaryStage.setTitle("Hello World");
-//        primaryStage.setScene(new Scene(root, 300, 275));
-//        primaryStage.show();
+        //showLoginStage();
+        showHomeScene();
+
     }
 
 
@@ -124,7 +122,7 @@ public class Main extends Application {
 
         clubDetail.setScene(new Scene(root,1280,720));
         clubDetail.setTitle(club.getName());
-        clubDetail.initStyle(StageStyle.UNDECORATED);
+        clubDetail.initStyle(StageStyle.DECORATED);
         clubDetail.setResizable(false);
         clubDetail.show();
 

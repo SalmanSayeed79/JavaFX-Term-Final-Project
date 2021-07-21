@@ -47,12 +47,31 @@
 	-fx-text-fill:white !important;
 	-fx-border-color:#a9a9a9 !important;
 }
+.search-text-field {
+	-fx-background-color:transperant !important;
+	-fx-background-color: transperant !important;
+	-fx-background: transperant !important;
+	-fx-border-style:solid !important;
+	-fx-border-color:white !important;
+	-fx-text-fill: white !important;
+	-fx-border-width:2 !important;
+	-fx-border-radius: 0 !important;
+
+}
+
+.search-text-field:focused {
+	-fx-background-color:white !important;
+	-fx-text-fill: black !important;
+	-fx-border-width:2px;
+	-fx-border-style:solid;
+	-fx-background-color: white, transparent , transparent;
+	-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
 .search-button{
-	/*//-fx-background-color: white !important;*/
-	/*-fx-border-radius: 0 !important;*/
-	/*-fx-border-width: 0 !important;*/
-	-fx-background-color: transperant;
-	-fx-background: transperant;
+
+	-fx-background-color: transperant !important;
+	-fx-background: transperant !important;
 	-fx-border-style:solid !important;
 	-fx-border-color:white !important;
 	-fx-text-fill: white !important;

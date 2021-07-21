@@ -18,7 +18,7 @@
             <HBox prefHeight="100.0" prefWidth="40.0" />
             <HBox prefHeight="100.0" prefWidth="300.0" spacing="30.0">
                <children>
-                  <ToggleButton focusTraversable="true" mnemonicParsing="false" onAction="#searchNameSelected" prefHeight="100.0" prefWidth="300.0" styleClass="toggle-button"  stylesheets="@../Styles/style.css" text="Search By Name">
+                  <ToggleButton selected="true" fx:id="playerSearchButton" mnemonicParsing="false" onAction="#searchNameSelected" prefHeight="100.0" prefWidth="300.0" styleClass="toggle-button"  stylesheets="@../Styles/style.css" text="Search By Name">
                      <font>
                         <Font name="Oswald Regular" size="20.0" />
                      </font>
@@ -79,34 +79,7 @@
             <HBox prefHeight="100.0" prefWidth="40.0" />
          </children>
       </HBox>
-      <HBox fx:id="searchBarContainer" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: transperant; -fx-background: transperant;">
-         <children>
-            <HBox prefHeight="100.0" prefWidth="40.0" />
 
-            <TextField prefHeight="60" alignment="CENTER" promptText="Enter Player Name" styleClass="text-field" stylesheets="@../Styles/style.css">
-               <font>
-                  <Font name="Oswald Regular" size="25.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </TextField>
-            <HBox prefHeight="100.0" prefWidth="40.0" />
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0">
-               <children>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="100.0" styleClass="search-button" stylesheets="@../Styles/style.css" text="Search">
-                     <font>
-                        <Font name="Oswald Regular" size="20.0" />
-                     </font>
-
-
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-               </children>
-            </HBox>
-         </children>
-      </HBox>
+      <HBox fx:id="bottomBarContainer" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="1520.0" style="-fx-background-color: transperant; -fx-background: transperant;" />
    </children>
 </VBox>

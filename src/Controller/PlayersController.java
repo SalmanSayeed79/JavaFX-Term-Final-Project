@@ -1,8 +1,10 @@
 package Controller;
 
 import ComponentController.PlayerListItemController;
+import ComponentController.SearchBarTopController;
 import Model.Model;
 import Model.Player;
+import Model.SearchManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,14 +16,17 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class PlayersController implements Initializable {
     private Main main;
+
     @FXML
-    private VBox playerList;
+    private  VBox playerList;
+
     @FXML
     private VBox searchContainer;
 
@@ -58,8 +63,155 @@ public class PlayersController implements Initializable {
     public void settingsButtonClicked(ActionEvent actionEvent) throws IOException {
         main.showSettingsScene();
     }
+    public void searchPlayers(String playerName){
+        playerList.getChildren().clear();
+        Player currentPlayer= SearchManager.searchName(Model.players,playerName);
+        if(currentPlayer==null){
+            System.out.println("no match");
+        }
+        else {
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(PlayersController.class.getResource("/Components/PlayerListItem.fxml"));
+                HBox listItem = fxmlLoader.load();
+                PlayerListItemController playerListItemController = fxmlLoader.getController();
+                playerListItemController.setPlayer(currentPlayer);
+                playerListItemController.setPlayerName(currentPlayer.getName());
+                playerListItemController.setPlayerImage(currentPlayer.getName());
+                playerListItemController.setPlayerPosition(currentPlayer.getPosition());
+                playerListItemController.setPlayerNumber(currentPlayer.getNumber());
+                playerListItemController.setPlayerFlag(currentPlayer.getCountry());
+                playerListItemController.setPlayerClub(currentPlayer.getClub());
 
+                playerList.getChildren().add(listItem);
 
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void searchPosition(String position){
+        playerList.getChildren().clear();
+        ArrayList<Player> currentPlayers= SearchManager.searchPosition(Model.players,position);
+        if(currentPlayers.size()==0){
+            System.out.println(position);
+            System.out.println("no match");
+        }
+        else {
+            for(int i=0;i<currentPlayers.size();i++) {
+                Player currentPlayer=currentPlayers.get(i);
+                try {
+                    FXMLLoader fxmlLoader = new FXMLLoader();
+                    fxmlLoader.setLocation(PlayersController.class.getResource("/Components/PlayerListItem.fxml"));
+                    HBox listItem = fxmlLoader.load();
+                    PlayerListItemController playerListItemController = fxmlLoader.getController();
+                    playerListItemController.setPlayer(currentPlayer);
+                    playerListItemController.setPlayerName(currentPlayer.getName());
+                    playerListItemController.setPlayerImage(currentPlayer.getName());
+                    playerListItemController.setPlayerPosition(currentPlayer.getPosition());
+                    playerListItemController.setPlayerNumber(currentPlayer.getNumber());
+                    playerListItemController.setPlayerFlag(currentPlayer.getCountry());
+                    playerListItemController.setPlayerClub(currentPlayer.getClub());
+
+                    playerList.getChildren().add(listItem);
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+    public void searchCountry(String country){
+        playerList.getChildren().clear();
+        ArrayList<Player> currentPlayers= SearchManager.searchCountry(Model.players,country);
+        if(currentPlayers.size()==0){
+            System.out.println("no match");
+        }
+        else {
+            for(int i=0;i<currentPlayers.size();i++) {
+                Player currentPlayer=currentPlayers.get(i);
+                try {
+                    FXMLLoader fxmlLoader = new FXMLLoader();
+                    fxmlLoader.setLocation(PlayersController.class.getResource("/Components/PlayerListItem.fxml"));
+                    HBox listItem = fxmlLoader.load();
+                    PlayerListItemController playerListItemController = fxmlLoader.getController();
+                    playerListItemController.setPlayer(currentPlayer);
+                    playerListItemController.setPlayerName(currentPlayer.getName());
+                    playerListItemController.setPlayerImage(currentPlayer.getName());
+                    playerListItemController.setPlayerPosition(currentPlayer.getPosition());
+                    playerListItemController.setPlayerNumber(currentPlayer.getNumber());
+                    playerListItemController.setPlayerFlag(currentPlayer.getCountry());
+                    playerListItemController.setPlayerClub(currentPlayer.getClub());
+
+                    playerList.getChildren().add(listItem);
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+    public void searchClub(String club){
+        playerList.getChildren().clear();
+        ArrayList<Player> currentPlayers= SearchManager.searchClub(Model.players,club);
+        if(currentPlayers.size()==0){
+            System.out.println("no match");
+        }
+        else {
+            for(int i=0;i<currentPlayers.size();i++) {
+                Player currentPlayer=currentPlayers.get(i);
+                try {
+                    FXMLLoader fxmlLoader = new FXMLLoader();
+                    fxmlLoader.setLocation(PlayersController.class.getResource("/Components/PlayerListItem.fxml"));
+                    HBox listItem = fxmlLoader.load();
+                    PlayerListItemController playerListItemController = fxmlLoader.getController();
+                    playerListItemController.setPlayer(currentPlayer);
+                    playerListItemController.setPlayerName(currentPlayer.getName());
+                    playerListItemController.setPlayerImage(currentPlayer.getName());
+                    playerListItemController.setPlayerPosition(currentPlayer.getPosition());
+                    playerListItemController.setPlayerNumber(currentPlayer.getNumber());
+                    playerListItemController.setPlayerFlag(currentPlayer.getCountry());
+                    playerListItemController.setPlayerClub(currentPlayer.getClub());
+
+                    playerList.getChildren().add(listItem);
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+    public void searchSalary(Double lower, Double upper){
+        playerList.getChildren().clear();
+        ArrayList<Player> currentPlayers= SearchManager.searchSalary(Model.players,lower,upper);
+        if(currentPlayers.size()==0){
+            System.out.println("no match");
+        }
+        else {
+            for(int i=0;i<currentPlayers.size();i++) {
+                Player currentPlayer=currentPlayers.get(i);
+                try {
+                    FXMLLoader fxmlLoader = new FXMLLoader();
+                    fxmlLoader.setLocation(PlayersController.class.getResource("/Components/PlayerListItem.fxml"));
+                    HBox listItem = fxmlLoader.load();
+                    PlayerListItemController playerListItemController = fxmlLoader.getController();
+                    playerListItemController.setPlayer(currentPlayer);
+                    playerListItemController.setPlayerName(currentPlayer.getName());
+                    playerListItemController.setPlayerImage(currentPlayer.getName());
+                    playerListItemController.setPlayerPosition(currentPlayer.getPosition());
+                    playerListItemController.setPlayerNumber(currentPlayer.getNumber());
+                    playerListItemController.setPlayerFlag(currentPlayer.getCountry());
+                    playerListItemController.setPlayerClub(currentPlayer.getClub());
+
+                    playerList.getChildren().add(listItem);
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 
 
     @Override
@@ -69,6 +221,8 @@ public class PlayersController implements Initializable {
             FXMLLoader fxmlLoader=new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("/Components/SearchBarTop.fxml"));
             VBox searchBar=fxmlLoader.load();
+            SearchBarTopController controller=fxmlLoader.getController();
+            controller.setPlayersController(this);
             searchContainer.getChildren().add(searchBar);
         } catch (IOException e) {
             e.printStackTrace();

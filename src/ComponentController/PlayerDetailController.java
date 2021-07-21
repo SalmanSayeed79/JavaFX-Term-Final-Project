@@ -49,7 +49,7 @@ public class PlayerDetailController {
             Image image = new Image(String.valueOf(getClass().getResource(url)));
             this.playerImage.setImage(image);
         }catch (Exception e){
-            System.out.println("/Images/Players/"+playerName+".png");
+            System.out.println("/Images/Players/WithBg/"+playerName+".png");
             System.out.println("No image found");
         }
 

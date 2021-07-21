@@ -5,7 +5,6 @@ import java.util.Locale;
 
 public class SearchManager {
     public static Player searchName(ArrayList<Player> players,String ...v){
-        boolean foundMatch=false;
         for(Player a : players){
             for(String name:v){
                 if(a.getName().equalsIgnoreCase(name)){
@@ -13,13 +12,10 @@ public class SearchManager {
                 }
             }
         }
-        if(!foundMatch) {
-            System.out.println("No player found!");
-        };
         return null;
 
     }
-    static ArrayList<Player> searchCountry(ArrayList<Player> players,String country){
+    public static ArrayList<Player> searchCountry(ArrayList<Player> players,String country){
         ArrayList<Player> matchedPlayers=new ArrayList<Player>();
         for(Player a : players){
             if(a.getCountry().equalsIgnoreCase(country.toLowerCase())){
@@ -29,17 +25,27 @@ public class SearchManager {
         return matchedPlayers;
 
     }
-    static ArrayList<Player> searchPosition(ArrayList<Player> players,String position){
+    public static ArrayList<Player> searchClub(ArrayList<Player> players,String club){
         ArrayList<Player> matchedPlayers=new ArrayList<Player>();
         for(Player a : players){
-            if(a.getPosition().equals(position.toLowerCase())){
+            if(a.getClub().equalsIgnoreCase(club)){
+                matchedPlayers.add(a);
+            }
+        }
+        return matchedPlayers;
+
+    }
+    public static ArrayList<Player> searchPosition(ArrayList<Player> players,String position){
+        ArrayList<Player> matchedPlayers=new ArrayList<Player>();
+        for(Player a : players){
+            if(a.getPosition().equalsIgnoreCase(position.toLowerCase())){
                 matchedPlayers.add(a);
 
             }
         }
         return matchedPlayers;
     }
-    static ArrayList<Player> searchSalary(ArrayList<Player> players,double lower,double upper){
+    public static ArrayList<Player> searchSalary(ArrayList<Player> players,double lower,double upper){
         ArrayList<Player> matchedPlayers=new ArrayList<Player>();
         for(Player a : players){
             if(a.getSalary()<=upper &&a.getSalary()>=lower){
