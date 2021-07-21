@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public class FileManager {
     static void readFile(ArrayList players){
-        File playerFile=new File("F:\\JAVA\\JAVA BUET\\Week3(Java fx offline1)\\players.txt");
+        File playerFile=new File("players.txt");
         if(playerFile.exists()){
             try {
                 Scanner textScn=new Scanner(playerFile);
@@ -33,12 +33,15 @@ public class FileManager {
 //               System.out.println(a);
 //           }
         }
+        else {
+            System.out.println("File not found");
+        }
     }
 
     static void writeFile(ArrayList<Player> players){
 
         try {
-            FileWriter myWriter = new FileWriter("F:\\JAVA\\JAVA BUET\\Week3(Java fx offline1)\\players.txt");
+            FileWriter myWriter = new FileWriter("players.txt");
             for(Player a:players){
                 myWriter.write(a.getName()+","+a.getCountry()+","+a.getAge()+","+a.getHeight()+","+a.getClub()+","+a.getPosition()+","+a.getNumber()+","+a.getSalary()+"\n");
 
