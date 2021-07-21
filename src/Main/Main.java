@@ -19,6 +19,7 @@ import Model.Model;
 import Model.Club;
 import Model.Player;
 
+
 import java.io.IOException;
 
 public class Main extends Application {
@@ -31,7 +32,6 @@ public class Main extends Application {
     public Stage getStage() {
         return mainStage;
     }
-
 
 
     @Override

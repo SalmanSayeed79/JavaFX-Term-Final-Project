@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -18,7 +20,7 @@
             <Image url="@../Images/LoginBg.png" />
          </image>
       </ImageView>
-      <VBox alignment="CENTER" maxHeight="600.0" maxWidth="600.0" opacity="0.8" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #f2f2f2; -fx-border-radius: 100;">
+      <VBox alignment="CENTER" maxHeight="600.0" maxWidth="700.0" opacity="0.8" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #f2f2f2; -fx-border-radius: 100;">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -37,10 +39,16 @@
                         <Font name="Oswald Regular" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="login_club" style="-fx-border-color: none; -fx-border-width: 0; -fx-border-style: none;">
+                  <TextField fx:id="login_club" styleClass="text-field" stylesheets="@../Styles/style.css" text="Chelsea">
                      <opaqueInsets>
                         <Insets left="50.0" />
                      </opaqueInsets>
+                     <font>
+                        <Font name="Oswald Medium" size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </TextField>
                </children>
             </HBox>
@@ -51,19 +59,25 @@
                         <Font name="Oswald Regular" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="login_password" style="-fx-border-color: none; -fx-border-width: 0; -fx-border-style: none;">
-                     <opaqueInsets>
-                        <Insets left="50.0" />
-                     </opaqueInsets>
-                  </TextField>
+                  <PasswordField styleClass="text-field" stylesheets="@../Styles/style.css">
+                     <font>
+                        <Font name="Oswald Regular" size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </PasswordField>
                </children>
             </HBox>
             <HBox alignment="CENTER" maxHeight="100.0" maxWidth="500.0" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="login_submit" onAction="#loginSubmitAction" mnemonicParsing="false" style="-fx-background-color: #f2f2f2; -fx-border-style: solid; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 7;" text="Login">
+                  <Button onAction="#loginSubmitAction" fx:id="login_submit" style="-fx-background-color: #f2f2f2;-fx-border-style:solid;-fx-border-color:black;-fx-border-width:2;-fx-border-radius:7" mnemonicParsing="false" styleClass="button" stylesheets="@../Styles/style.css" text="Login">
                      <font>
                         <Font name="Oswald Regular" size="20.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                </children>
             </HBox>

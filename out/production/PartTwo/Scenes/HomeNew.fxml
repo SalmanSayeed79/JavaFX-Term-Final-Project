@@ -34,7 +34,7 @@
             </Label>
             <VBox alignment="CENTER" prefHeight="500.0" prefWidth="400.0" spacing="10.0">
                <children>
-                  <Button graphicTextGap="50.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Home" textAlignment="RIGHT">
+                  <Button  graphicTextGap="50.0" mnemonicParsing="false" onAction="#homeButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Home" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -63,7 +63,7 @@
                         </Blend>
                      </effect>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="220.0" mnemonicParsing="false" onAction="#clubButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Clubs" textAlignment="RIGHT">
+                  <Button styleClass="hover-bg" stylesheets="@../Styles/style.css" graphicTextGap="50.0" layoutX="60.0" layoutY="220.0" mnemonicParsing="false" onAction="#clubButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Clubs" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -78,7 +78,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="265.0" mnemonicParsing="false" onAction="#playersButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Players" textAlignment="RIGHT">
+                  <Button styleClass="hover-bg" stylesheets="@../Styles/style.css" graphicTextGap="50.0" layoutX="60.0" layoutY="265.0" mnemonicParsing="false" onAction="#playersButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Players" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -93,7 +93,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="310.0" mnemonicParsing="false" onAction="#transferButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Transfer" textAlignment="RIGHT">
+                  <Button styleClass="hover-bg" stylesheets="@../Styles/style.css" graphicTextGap="50.0" layoutX="60.0" layoutY="310.0" mnemonicParsing="false" onAction="#transferButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Transfer" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -108,7 +108,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="355.0" mnemonicParsing="false" onAction="#playButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Play Game" textAlignment="RIGHT">
+                  <Button styleClass="hover-bg" stylesheets="@../Styles/style.css" graphicTextGap="50.0" layoutX="60.0" layoutY="355.0" mnemonicParsing="false" onAction="#playButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Play Game" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>
@@ -123,7 +123,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button graphicTextGap="50.0" layoutX="60.0" layoutY="400.0" mnemonicParsing="false" onAction="#settingsButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Settings" textAlignment="RIGHT">
+                  <Button styleClass="hover-bg" stylesheets="@../Styles/style.css" graphicTextGap="50.0" layoutX="60.0" layoutY="400.0" mnemonicParsing="false" onAction="#settingsButtonClicked" onMouseDragOver="#sideBarButtonHover" onMouseEntered="#sideBarButtonHover" onMouseExited="#sideBarButtonHoverOut" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 7;" text="Settings" textAlignment="RIGHT">
                      <font>
                         <Font name="Oswald Medium" size="25.0" />
                      </font>

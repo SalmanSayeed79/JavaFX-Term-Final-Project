@@ -10,7 +10,7 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:controller="ComponentController.ClubCardController" onMouseClicked="#clubDetailsShow" alignment="TOP_CENTER" cacheShape="false" centerShape="false" maxHeight="300.0" maxWidth="400.0" prefHeight="250.0" prefWidth="400.0" scaleShape="false" style="-fx-border-color: gray; -fx-border-style: solid; -fx-border-width: .5; -fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane styleClass="hover-bg" stylesheets="@../Styles/style.css" fx:controller="ComponentController.ClubCardController" onMouseClicked="#clubDetailsShow" alignment="TOP_CENTER" cacheShape="false" centerShape="false" maxHeight="300.0" maxWidth="400.0" prefHeight="250.0" prefWidth="400.0" scaleShape="false" style="-fx-border-color: gray; -fx-border-style: solid; -fx-border-width: .5; -fx-background-color: white;" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fx:id="clubLogo" fitHeight="136.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
          <image>

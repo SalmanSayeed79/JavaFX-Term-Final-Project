@@ -22,6 +22,8 @@ public class PlayersController implements Initializable {
     private Main main;
     @FXML
     private VBox playerList;
+    @FXML
+    private VBox searchContainer;
 
     public void setMain(Main main){
         this.main=main;
@@ -62,7 +64,17 @@ public class PlayersController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        //Loading the searchBar
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader();
+            fxmlLoader.setLocation(getClass().getResource("/Components/SearchBarTop.fxml"));
+            VBox searchBar=fxmlLoader.load();
+            searchContainer.getChildren().add(searchBar);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+        //Loading the players panel
         ArrayList<Player> players=Model.players;
         for(int i=0;i<players.size();i++){
             Player currentPlayer=players.get(i);
