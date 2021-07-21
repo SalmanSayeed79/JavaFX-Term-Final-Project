@@ -6,4 +6,5 @@ module PartTwo {
     opens Main;
     opens Controller;
     opens ComponentController;
+    opens Game;
 }

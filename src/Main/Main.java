@@ -1,6 +1,7 @@
 package Main;
 
 import ComponentController.PlayerDetailController;
+import Game.GamePlannerController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -27,6 +28,7 @@ public class Main extends Application {
 
     private Stage mainStage;
     private Stage loginStage;
+    public Stage gameStage;
     private static Stage clubDetail;
     private static Stage playerDetail;
 
@@ -45,6 +47,7 @@ public class Main extends Application {
         mainStage=new Stage();
         clubDetail=new Stage();
         playerDetail=new Stage();
+        gameStage=new Stage();
         //showLoginStage();
         showHomeScene();
         //showSettingsScene();
@@ -67,9 +70,11 @@ public class Main extends Application {
     }
     public void showHomeScene() throws IOException {
         FXMLLoader loader = new FXMLLoader();
+
         loader.setLocation(getClass().getResource("/Scenes/HomeNew.fxml"));
         Parent root = loader.load();
 
+        //GamePlannerController controller=loader.getController();
         HomeController controller = loader.getController();
         controller.setMain(this);
 
@@ -108,7 +113,17 @@ public class Main extends Application {
     public void showTransferScene() {
     }
 
-    public void showPlayScene() {
+    public void showPlayScene() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/Game/GamePlanner.fxml"));
+        Parent root = loader.load();
+
+        GamePlannerController controller = loader.getController();
+
+        gameStage.setScene(new Scene(root,1920,1080));
+        gameStage.setTitle("Game Planner");
+        gameStage.show();
+
     }
 
     public void showSettingsScene() throws IOException {
