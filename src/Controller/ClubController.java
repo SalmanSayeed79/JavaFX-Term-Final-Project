@@ -21,13 +21,13 @@ import java.util.ResourceBundle;
 
 public class ClubController implements Initializable {
     private Main main;
-    @FXML
-    private FlowPane clubCardContainer;
+
 
     public void setMain(Main main){
         this.main=main;
     }
-
+    @FXML
+    private FlowPane clubCardContainer;
 
     public void sideBarButtonHover(MouseDragEvent mouseDragEvent) {
     }

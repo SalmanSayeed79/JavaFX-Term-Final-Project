@@ -13,9 +13,7 @@
 <StackPane styleClass="hover-bg" stylesheets="@../Styles/style.css" fx:controller="ComponentController.ClubCardController" onMouseClicked="#clubDetailsShow" alignment="TOP_CENTER" cacheShape="false" centerShape="false" maxHeight="300.0" maxWidth="400.0" prefHeight="250.0" prefWidth="400.0" scaleShape="false" style="-fx-border-color: gray; -fx-border-style: solid; -fx-border-width: .5; -fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fx:id="clubLogo" fitHeight="136.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Images/Arsenal.png" />
-         </image>
+
          <StackPane.margin>
             <Insets top="50.0" />
          </StackPane.margin>
@@ -29,11 +27,4 @@
    <cursor>
       <Cursor fx:constant="HAND" />
    </cursor>
-   <effect>
-      <DropShadow offsetX="5.0" offsetY="5.0">
-         <color>
-            <Color red="0.32894736528396606" green="0.32894736528396606" blue="0.32894736528396606" />
-         </color>
-      </DropShadow>
-   </effect>
 </StackPane>

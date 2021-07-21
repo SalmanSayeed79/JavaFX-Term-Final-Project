@@ -18,6 +18,13 @@ public class Club {
     }
 
     public String getName(){return this.name;}
+
+    public Club getClubFromName(String clubName){
+        if(this.name.equalsIgnoreCase(clubName)){
+            return this;
+        }
+        return null;
+    }
     public int getGoalkeepers(){return this.goalkeepers;}
     public int getDefenders(){return this.defenders;}
     public int getMidfielders(){return this.midfielders;}

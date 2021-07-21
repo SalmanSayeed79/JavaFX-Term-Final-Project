@@ -23,3 +23,5 @@ Hector Bellerin,Spain,26,1.78,Arsenal,Defender,2,110000.0
 Granit Xhaka,Switzerland,28,1.85,Arsenal,Midfielder,34,100000.0
 Thomas Partey,Ghana,27,1.85,Arsenal,Midfielder,18,250000.0
 Pierre-Emerick Aubameyang,Gabon,31,1.87,Arsenal,Forward,14,250000.0
+Lionel Messi,Argentina,34,1.7,FC Barcelona,Forward,10,250000.0
+Pedri,Spain,18,1.74,FC Barcelona,Midfielder,17,120000.0

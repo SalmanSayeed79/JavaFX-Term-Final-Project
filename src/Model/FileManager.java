@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class FileManager {
-    static void readFile(ArrayList players){
+    public static void readFile(ArrayList players){
         File playerFile=new File("players.txt");
         if(playerFile.exists()){
             try {
@@ -38,7 +38,7 @@ public class FileManager {
         }
     }
 
-    static void writeFile(ArrayList<Player> players){
+    public static void writeFile(ArrayList<Player> players){
 
         try {
             FileWriter myWriter = new FileWriter("players.txt");

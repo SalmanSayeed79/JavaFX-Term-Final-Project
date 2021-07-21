@@ -17,7 +17,7 @@ public class Model {
         }
         return clubNames;
     }
-    private static ArrayList<Club> sortPlayersToClubs(ArrayList<Player>players){
+    public static ArrayList<Club> sortPlayersToClubs(ArrayList<Player>players){
         ArrayList<String> clubNames=getAllClubNames(players);
         ArrayList<Club>clubs =new ArrayList<Club>();
         for(int i=0;i<clubNames.size();i++){

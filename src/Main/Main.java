@@ -15,6 +15,7 @@ import Controller.PlayersController;
 import Controller.HomeController;
 import Controller.ClubDetailsController;
 import Controller.ClubController;
+import Controller.AddPlayerController;
 import Model.Model;
 import Model.Club;
 import Model.Player;
@@ -28,6 +29,8 @@ public class Main extends Application {
     private Stage loginStage;
     private static Stage clubDetail;
     private static Stage playerDetail;
+
+    public Stage fileChooserStage;
 
     public Stage getStage() {
         return mainStage;
@@ -44,6 +47,7 @@ public class Main extends Application {
         playerDetail=new Stage();
         //showLoginStage();
         showHomeScene();
+        //showSettingsScene();
 
     }
 
@@ -107,7 +111,17 @@ public class Main extends Application {
     public void showPlayScene() {
     }
 
-    public void showSettingsScene() {
+    public void showSettingsScene() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/Scenes/AddPlayer.fxml"));
+        Parent root = loader.load();
+
+        AddPlayerController controller = loader.getController();
+        controller.setMain(this);
+
+        mainStage.setScene(new Scene(root,1920,1080));
+        mainStage.setTitle("FUTBOL 2021");
+        mainStage.show();
     }
     public static void showClubDetailScene(Club club) throws IOException {
         Club temp=club;
