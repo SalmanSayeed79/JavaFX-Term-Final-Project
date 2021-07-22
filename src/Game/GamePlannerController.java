@@ -12,6 +12,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.ArcType;
 import javafx.stage.FileChooser;
 
 import java.io.File;
@@ -44,6 +45,27 @@ public class GamePlannerController implements Initializable {
         eraserSelected=false;
         ArrayList<PlayerDisc> playerDiscs=new ArrayList<PlayerDisc>();
         context=DrawBoard.getGraphicsContext2D();
+
+       drawFieldOverlay();
+
+//        DrawBoard.setOnMouseDragged(new EventHandler<MouseEvent>(){
+//            @Override
+//            public void handle(MouseEvent mouseEvent) {
+//                if(eraserSelected==true){
+//                    context.setFill(Color.web("45930B"));
+//                    context.fillOval(mouseEvent.getX()-25,mouseEvent.getY()-25,50,50);
+//                }
+//
+//            }
+//        });
+
+
+
+    }
+
+    public void drawFieldOverlay(){
+        //Emptying playerCount
+        this.playerCount=0;
         //Drawing the field
         context.setFill(Color.web("45930B"));
         context.fillRect(0,0,1920,980);
@@ -62,21 +84,7 @@ public class GamePlannerController implements Initializable {
         context.setStroke(Color.WHITE);
         context.setLineWidth(5);
         context.strokeOval(960-150,490-150,300,300);
-        DrawBoard.setOnMouseDragged(new EventHandler<MouseEvent>(){
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                if(eraserSelected==true){
-                    context.setFill(Color.web("45930B"));
-                    context.fillOval(mouseEvent.getX()-25,mouseEvent.getY()-25,50,50);
-                }
-
-            }
-        });
-
-
-
     }
-
 
     @FXML
     void AddPlayer(MouseEvent event) {
