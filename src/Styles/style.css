@@ -89,3 +89,13 @@
 
 }
 
+.penalty-button{
+	-fx-background-color: transperant !important;
+	-fx-background: transperant !important;
+	-fx-border-radius: 0;
+	-fx-border-width: 0 !important;
+}
+.penalty-button:hover{
+	-fx-background-color: rgba(0,0,0,.2) !important;
+
+}

@@ -2,6 +2,7 @@ package Main;
 
 import ComponentController.PlayerDetailController;
 import Game.GamePlannerController;
+import Game.PenaltyShootoutController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -29,6 +30,7 @@ public class Main extends Application {
     private Stage mainStage;
     private Stage loginStage;
     public Stage gameStage;
+    public Stage penaltyStage;
     private static Stage clubDetail;
     private static Stage playerDetail;
 
@@ -48,9 +50,11 @@ public class Main extends Application {
         clubDetail=new Stage();
         playerDetail=new Stage();
         gameStage=new Stage();
+        penaltyStage=new Stage();
         //showLoginStage();
         showHomeScene();
         //showSettingsScene();
+        //showPenaltyScene();
 
     }
 
@@ -123,6 +127,18 @@ public class Main extends Application {
         gameStage.setScene(new Scene(root,1920,1080));
         gameStage.setTitle("Game Planner");
         gameStage.show();
+
+    }
+    public void showPenaltyScene() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/Game/PenaltyShootout.fxml"));
+        Parent root = loader.load();
+
+        PenaltyShootoutController controller = loader.getController();
+
+        penaltyStage.setScene(new Scene(root,1920,1080));
+        penaltyStage.setTitle("Penalty Shootout");
+        penaltyStage.show();
 
     }
 

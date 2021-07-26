@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.PenaltyShootoutController">
+   <children>
+      <HBox prefHeight="880.0" prefWidth="1920.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="80.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="780.0" prefWidth="80.0" spacing="50.0" />
+               </children>
+            </VBox>
+            <StackPane prefHeight="880.0" prefWidth="1760.0" style="-fx-background-color: red;">
+               <children>
+                  <ImageView fitHeight="880.0" fitWidth="1760.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Penalty/GameBg.png" />
+                     </image>
+                  </ImageView>
+                  <StackPane fx:id="ShootPane" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="Keeper" fitHeight="880.0" fitWidth="1760.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Penalty/KeeperPrev.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Ball" fitHeight="880.0" fitWidth="1760.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Penalty/BallPrev.png" />
+                           </image>
+                        </ImageView>
+                        <HBox maxHeight="350.0" maxWidth="960.0" prefHeight="500.0" prefWidth="1000.0">
+                           <children>
+                              <Button fx:id="leftButton" mnemonicParsing="false" onAction="#leftHandle" prefHeight="350.0" prefWidth="320.0" styleClass="penalty-button" stylesheets="@../Styles/style.css">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="straightButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#straightHandle" prefHeight="350.0" prefWidth="320.0" styleClass="penalty-button" stylesheets="@../Styles/style.css">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="rightButton" layoutX="330.0" layoutY="10.0" mnemonicParsing="false" onAction="#rightHandle" prefHeight="350.0" prefWidth="320.0" styleClass="penalty-button" stylesheets="@../Styles/style.css">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </StackPane>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="80.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="780.0" prefWidth="80.0" spacing="50.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="200.0" prefWidth="1920.0" spacing="100.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="0.0" prefHeight="200.0" prefWidth="400.0">
+               <children>
+                  <Label text="Home Score">
+                     <font>
+                        <Font name="Oswald Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="HomeScore" text="0(0)">
+                     <font>
+                        <Font name="Oswald Medium" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="0.0" prefHeight="200.0" prefWidth="1120.0">
+               <children>
+                  <Label fx:id="Title" text="Home Team Shot">
+                     <font>
+                        <Font name="Oswald Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Subtitle" text="You shoot this shot">
+                     <font>
+                        <Font name="Oswald" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ReadyButton" styleClass="button" stylesheets="@../Styles/style.css" onAction="#reset" text="Ready!">
+                     <font>
+                        <Font name="Oswald Medium" size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="160.0" layoutY="47.0" maxHeight="0.0" prefHeight="200.0" prefWidth="400.0">
+               <children>
+                  <Label text="Away Score">
+                     <font>
+                        <Font name="Oswald Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="AwayScore" text="0(0)">
+                     <font>
+                        <Font name="Oswald Medium" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
