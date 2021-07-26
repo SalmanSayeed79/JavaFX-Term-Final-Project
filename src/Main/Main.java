@@ -1,6 +1,7 @@
 package Main;
 
 import ComponentController.PlayerDetailController;
+import Game.GameMenuController;
 import Game.GamePlannerController;
 import Game.PenaltyShootoutController;
 import javafx.application.Application;
@@ -118,6 +119,18 @@ public class Main extends Application {
     }
 
     public void showPlayScene() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/Game/GameMenu.fxml"));
+        Parent root = loader.load();
+
+       GameMenuController controller = loader.getController();
+        controller.setMain(this);
+        mainStage.setScene(new Scene(root,1920,1080));
+        mainStage.setTitle("Game Planner");
+        mainStage.show();
+
+    }
+    public void showPlannerScene() throws IOException {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/Game/GamePlanner.fxml"));
         Parent root = loader.load();
